@@ -11,3 +11,16 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !index
 RewriteRule (.*) index.html [L]
 ```
+
+### Laravel
+```
+RewriteEngine On
+RewriteRule ^(.*)$ public/$1 [L]
+```
+
+### Deny access for hidden files
+```
+RewriteCond %{SCRIPT_FILENAME} -d [OR]
+RewriteCond %{SCRIPT_FILENAME} -f
+RewriteRule "(^|/)\." - [F]
+```
