@@ -44,7 +44,7 @@ Consider creating a CorsMiddleware.php file with the following code.
 }
 ```
 After saving it in your middleware folder, enable it by adding it to your `bootstap/app.php` file, on the list of you middleware like this
-```
+```php
 $app->middleware([
     ...
     App\Http\Middleware\CorsMiddleware::class // Add this
