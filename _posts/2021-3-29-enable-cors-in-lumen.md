@@ -3,7 +3,7 @@ layout: post
 title: Enable CORS in Lumen
 ---
 
-Consider creating a CorsMiddleware.php file with the following code.
+Consider creating a `CorsMiddleware.php` file with the following code.
 ```php
 <?php namespace App\Http\Middleware;
 
