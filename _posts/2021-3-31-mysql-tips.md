@@ -8,3 +8,6 @@ title: Some MySQL Tips!
 
 ### Get email domain
 `SELECT DISTINCT SUBSTRING(email,INSTR(email,'@')+1) AS domain FROM personal;`
+
+### Fix GROUP BY didn't work 
+`SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));`
