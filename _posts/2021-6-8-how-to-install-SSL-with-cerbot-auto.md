@@ -7,4 +7,4 @@ title: How to install SSL with cerbot-auto
 `certbot-auto certonly --manual --preferred-challenges dns -d *.yourdomain.com -d yourdomain.com`
 
 ### Install/Renew SSL for single domain (Apache)
-`certbot-auto --apache -d uat.stambridge.group`
+`certbot-auto --apache -d yourdomain.com`
