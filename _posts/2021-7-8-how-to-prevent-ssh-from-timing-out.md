@@ -12,3 +12,5 @@ To set the SSH keep alive option on a Linux client:
 - Edit the file at /etc/ssh/ssh_config
 - Add this line to the file: ServerAliveInterval 60
 - Save the file
+
+![alt text](../images/ssh-config.png "Title")
